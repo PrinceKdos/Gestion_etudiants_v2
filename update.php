@@ -112,4 +112,4 @@ $filieres = $pdo->query("SELECT * FROM filieres ORDER BY nom")->fetchAll(PDO::FE
 
 <script src="assests/js/script.js"></script>
 </body>
-</html>
+</html> 
