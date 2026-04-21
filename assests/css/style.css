@@ -1,0 +1,241 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+header a:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a73e8;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+/* ===== CARD ===== */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 32px;
+}
+
+/* ===== FORMULAIRE ===== */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26,115,232,0.1);
+}
+
+/* Champ en erreur */
+.form-group input.error,
+.form-group select.error {
+    border-color: #e53935;
+}
+
+.error-msg {
+    color: #e53935;
+    font-size: 0.82rem;
+    margin-top: 4px;
+    display: none;
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+}
+
+.btn-warning {
+    background-color: #f57c00;
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* ===== TABLEAU ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+}
+
+table thead {
+    background-color: #1a73e8;
+    color: white;
+}
+
+table thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e8e8e8;
+    transition: background 0.15s;
+}
+
+table tbody tr:hover {
+    background-color: #f5f9ff;
+}
+
+table tbody td {
+    padding: 11px 16px;
+    vertical-align: middle;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* ===== MESSAGES ===== */
+.alert {
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #43a047;
+}
+
+.alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #e53935;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
