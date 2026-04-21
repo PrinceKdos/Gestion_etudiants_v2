@@ -57,7 +57,7 @@ $filieres = $pdo->query("SELECT * FROM filieres ORDER BY nom")->fetchAll(PDO::FE
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un étudiant</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assests/css/style.css">
 </head>
 <body>
 
@@ -110,6 +110,6 @@ $filieres = $pdo->query("SELECT * FROM filieres ORDER BY nom")->fetchAll(PDO::FE
     </div>
 </div>
 
-<script src="assets/js/script.js"></script>
+<script src="assests/js/script.js"></script>
 </body>
 </html>
