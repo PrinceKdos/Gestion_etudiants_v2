@@ -71,3 +71,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Valider le formulaire de modification (update.php)
     validerFormulaire('form-modification');
 });
+
