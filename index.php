@@ -118,4 +118,4 @@ $etudiants = $pdo->query("
 
 <script src="assests/js/script.js"></script>
 </body>
-</html>
+</html> 
